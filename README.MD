@@ -31,20 +31,21 @@ tests/
 
 ## Getting Started
 
-### Install the Template
-Install directly from GitHub (default branch = `main`):
+### 1. Install the Template
+
 ```powershell
-dotnet new install https://github.com/mohdagung/MA.CleanArchitecture.Template.git
+git clone https://github.com/mohdagung/MA.CleanArchitecture.Template
+dotnet new install .\MA.CleanArchitecture.Template
 ```
 
-### Create a New Service
+### 2. Create a New Service
 ```powershell
 dotnet new ma-clean -n MA.MyService
 cd MA.MyService
 dotnet build
 ```
 
-### Run the API
+### 3. Run the API
 ```powershell
 dotnet run --project src/MA.MyService.Api
 ```
@@ -53,29 +54,27 @@ Swagger UI available at:
 https://localhost:<port>/swagger
 ```
 
-### Run the Worker
+### 4. Run the Worker
 ```powershell
 dotnet run --project src/MA.MyService.Worker
 ```
 
-### Run Tests
+### 5. Run Tests
 ```powershell
 dotnet test
 ```
 
 ## Updating the Template
-If new changes are pushed to the repo, reinstall the template to get the latest version:
+If you update the repo, users need to reinstall the template to get the latest:
 ```powershell
-dotnet new uninstall https://github.com/mohdagung/MA.CleanArchitecture.Template.git
-dotnet new install   https://github.com/mohdagung/MA.CleanArchitecture.Template.git
+dotnet new uninstall .\MA.CleanArchitecture.Template
+dotnet new install   .\MA.CleanArchitecture.Template
 ```
 
-## Distribution Options
-- **GitHub (default)**: Users install directly from repo / branch / subfolder.  
-- **NuGet (recommended for updates)**: Publish to NuGet.org so consumers can update easily:
+Or if they installed from ZIP:
 ```powershell
-dotnet new --update-check
-dotnet new --update-apply
+dotnet new uninstall .\MA.CleanArchitecture.Template-main
+dotnet new install   .\MA.CleanArchitecture.Template-main
 ```
 
 ---
