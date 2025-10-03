@@ -1,0 +1,26 @@
+# ---- .NET / Visual Studio ----
+bin/
+obj/
+Debug/
+Release/
+.vs/
+*.user
+*.suo
+*.userprefs
+# Rider / JetBrains
+.idea/
+# VS Code
+.vscode/
+# NuGet
+*.nupkg
+packages/
+# Logs
+*.log
+# OS
+.DS_Store
+Thumbs.db
+# Build artifacts
+**/TestResults/
+# Resharper
+_ReSharper*/
+*.DotSettings.user

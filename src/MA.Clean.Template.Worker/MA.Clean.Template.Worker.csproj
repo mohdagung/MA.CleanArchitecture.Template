@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-MA.Clean.Template.Worker-5ac3e94a-56fe-48bb-a524-a1bdcaf340f5</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MA.Clean.Template.Infrastructure\MA.Clean.Template.Infrastructure.csproj" />
+    <ProjectReference Include="..\MA.Clean.Template.Shared\MA.Clean.Template.Shared.csproj" />
+  </ItemGroup>
+</Project>
