@@ -34,11 +34,7 @@ tests/
 ### Install the Template
 Install directly from GitHub (default branch = `main`):
 ```powershell
-dotnet new install https://github.com/<org>/<repo>
-```
-If the template lives in a subfolder:
-```powershell
-dotnet new install https://github.com/<org>/<repo>::MA.Clean.Template::main
+dotnet new install https://github.com/mohdagung/MA.CleanArchitecture.Template.git
 ```
 
 ### Create a New Service
@@ -70,8 +66,8 @@ dotnet test
 ## Updating the Template
 If new changes are pushed to the repo, reinstall the template to get the latest version:
 ```powershell
-dotnet new uninstall https://github.com/<org>/<repo>
-dotnet new install   https://github.com/<org>/<repo>
+dotnet new uninstall https://github.com/mohdagung/MA.CleanArchitecture.Template.git
+dotnet new install   https://github.com/mohdagung/MA.CleanArchitecture.Template.git
 ```
 
 ## Distribution Options
